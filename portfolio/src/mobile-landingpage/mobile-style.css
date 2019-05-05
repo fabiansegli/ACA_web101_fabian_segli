@@ -92,10 +92,11 @@ body {
     color: rgb(13, 14, 13);
     letter-spacing: 18px;
     font-style: arial;
+    
   }
-  @media (max-width: 576px) {
-    body {
-      background-image: url(./backgroundPic.jpg);
+  @media (max-width : 576px){  
+  body {
+  background-image: url(./backgroundPic.jpg);
  }
  main {
   text-align: center;
@@ -114,9 +115,12 @@ nav > a {
   background: transparent;
   border: 1px solid white;
   padding: 5px;
+  
 }
 .has-border {
   border-radius: 0px;
+  font-size: 2vw;
+  color: black;
 }
  img {
   width: 300px;
@@ -129,9 +133,6 @@ button {
   height: 50px;
   width: 75px;
   border-radius: 20px;
-}
-button {
-font-size: 15px;
 }
 .small-text {
   color: black;
