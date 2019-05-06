@@ -2,5 +2,29 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 header {
-    color: brown
+    color: black;
+    font-size: 2em;
+    width: 60%;
+    height: 3px;
+    margin: 5% auto; 
+}
+main {
+  width: 60%;
+  height: 1300px;
+  margin: 5% auto; 
+} 
+
+h3 {
+  margin: 2%;
+  font-size: 1em;
+}
+h4 {
+  margin: 2%;
+  font-size: 1em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 1em;
 }
