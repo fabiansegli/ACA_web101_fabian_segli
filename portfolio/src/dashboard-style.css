@@ -1,0 +1,412 @@
+html {
+    font-family: Avenir;
+    background-color: rgb(119, 146, 157);
+}
+body {
+    margin: 0;
+}
+.container {
+  height: 100vh;
+	display: grid;
+	grid-template-columns: 333px 333px 333px;
+  grid-template-rows: auto 1fr 1fr 1fr;
+	grid-template-areas:
+		 "calendar calendar clock"
+		 "greet greet greet"
+     "todo todo todo"
+     "calc calc calc";
+	max-width: 999px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*
+Calendar CSS and Grid for inner calendar below
+*/
+.calendar {
+	grid-area: calendar;
+	padding: 16px;
+  background-color: rgb(240, 206, 206);
+}
+
+.calendar-container {
+  height: auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+	grid-template-areas:
+		 "monthyear  monthyear monthyear monthyear monthyear monthyear monthyear"
+		 "sunday monday tuesday wednesday thursday friday saturday"
+     "one two three four five six seven"
+     "eight nine ten eleven twelve thirteen fourteen"
+     "fifteen sixteen seventeen eighteen nineteen twenty twentyone"
+     "twentytwo twentythree twentyfour twentyfive twentysix twentyseven twentyeight"
+      "twentynine thirty thirtyone thirtytwo thirtythree thirtyfour thirtyfive";
+	max-width: auto;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.calendar-container > div {
+    padding: 10px;
+}
+
+.monthyear {
+    grid-area: monthyear;
+    margin: auto;
+}
+
+.sunday {
+    grid-area: sunday;
+    margin: auto;
+}
+
+.monday {
+    grid-area: monday;
+    margin: auto;
+}
+
+.tuesday {
+    grid-area: tuesday;
+    margin: auto;
+}
+
+.wednesday {
+    grid-area: wednesday;
+    margin: auto;
+}
+
+.thursday {
+    grid-area: thursday;
+    margin: auto;
+}
+
+.friday {
+    grid-area: friday;
+    margin: auto;
+}
+
+.saturday {
+    grid-area: saturday;
+    margin: auto;
+}
+
+.box-one {
+    grid-area: one;
+    margin: auto;
+}
+
+.box-two {
+    grid-area: two;
+    margin: auto;
+}
+
+.box-three {
+    grid-area: three;
+    margin: auto;
+}
+
+.box-four {
+    grid-area: four;
+    margin: auto;
+}
+
+.box-five {
+    grid-area: five;
+    margin: auto;
+}
+
+.box-six {
+    grid-area: six;
+    margin: auto;
+}
+
+.box-seven {
+    grid-area: seven;
+    margin: auto;
+}
+
+.box-eight {
+    grid-area: eight;
+    margin: auto;
+}
+
+.box-nine {
+    grid-area: nine;
+    margin: auto;
+}
+
+.box-ten {
+    grid-area: ten;
+    margin: auto;
+}
+
+.box-eleven {
+    grid-area: eleven;
+    margin: auto;
+}
+
+.box-twelve {
+    grid-area: twelve;
+    margin: auto;
+}
+
+.box-thirteen {
+    grid-area: thirteen;
+    margin: auto;
+}
+
+.box-fourteen {
+    grid-area: fourteen;
+    margin: auto;
+}
+
+.box-fifteen {
+    grid-area: fifteen;
+    margin: auto;
+}
+
+.box-sixteen {
+    grid-area: sixteen;
+    margin: auto;
+}
+
+.box-seventeen {
+    grid-area: seventeen;
+    margin: auto;
+}
+
+.box-eighteen {
+    grid-area: eighteen;
+    margin: auto;
+}
+
+.box-nineteen {
+    grid-area: nineteen;
+    margin: auto;
+}
+
+.box-twenty {
+    grid-area: twenty;
+    margin: auto;
+}
+
+.box-twentyone {
+    grid-area: twentyone;
+    margin: auto;
+}
+
+.box-twentytwo {
+    grid-area: twentytwo;
+    margin: auto;
+}
+
+.box-twentythree {
+    grid-area: twentythree;
+    margin: auto;
+}
+
+.box-twentyfour {
+    grid-area: twentyfour;
+    margin: auto;
+}
+
+.box-twentyfive {
+    grid-area: twentyfive;
+    margin: auto;
+}
+
+.box-twentysix {
+    grid-area: twentysix;
+    margin: auto;
+}
+
+.box-twentyseven {
+    grid-area: twentyseven;
+    margin: auto;
+}
+
+.box-twentyeight {
+    grid-area: twentyeight;
+    margin: auto;
+}
+
+.box-twentynine {
+    grid-area: twentynine;
+    margin: auto;
+}
+
+.box-thirty {
+    grid-area: thirty;
+    margin: auto;
+}
+
+.box-thirtyone {
+    grid-area: thirtyone;
+    margin: auto;
+}
+
+.box-thirtytwo {
+    grid-area: thirtytwo;
+    margin: auto;
+}
+
+.box-thirtythree {
+    grid-area: thirtythree;
+    margin: auto;
+}
+
+.box-thirtyfour {
+    grid-area: thirtyfour;
+    margin: auto;
+}
+
+.box-thirtyfive {
+    grid-area: thirtyfive;
+    margin: auto;
+}
+
+/*
+Clock CSS and Grid for inner clock below
+*/
+.clock {
+    grid-area: clock;
+  padding: 16px;
+  background-color: rgb(197, 119, 119);
+  border-left: 1px solid gray;
+}
+.clock {
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    color: rgb(19, 18, 18);
+    background: yellowgreen;
+    width: 210px;
+    height: 210px;
+    margin-left: 100px;
+    margin: 10px;
+}
+.clock-container {
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+          "first  second colon third fourth A M";
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40%;
+    font-size: 30px;
+  }
+  
+  .first {
+      grid-area: first;
+      margin: auto;
+  }
+  
+  .second {
+      grid-area: second;
+      margin: auto;
+  }
+  
+  .colon {
+      grid-area: colon;
+      margin: auto;
+  }
+  
+  .third {
+      grid-area: third;
+      margin: auto;
+  }
+  
+  .fourth {
+      grid-area: fourth;
+      margin: auto;
+  }
+  
+  .A {
+      grid-area: A;
+      margin: auto;
+  }
+  
+  .M {
+      grid-area: M;
+      margin: auto;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .calculator {
+    margin: 20px auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 213px;
+    height: auto;
+    background-color: #222;
+    border-radius: 10px;
+  }
+  .display {
+    background-color: #78a290;
+    width: 90%;
+    height: 60px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: right;
+  }
+  .keys {
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: left;
+    justify-content: left;
+  }
+  .key{
+    width: 40px;
+    height: auto;
+    margin: 4px;
+    background-color: #f1f1f1;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #f2f2f2;
+    border-bottom: 2px solid #ddd;
+    cursor: pointer;
+    line-height: 30px;
+  }
+  .key:active{
+    border-bottom: none;
+  }
+  .key:focus {outline:0;}
+  .oper{
+    color: #f1f1f1;
+    border: none;
+    background-color: #888;
+  }
+  .equl{
+    height: 76%;
+    background-color: #333;
+    -webkit-align-self: stretch;
+    color: #f1f1f1;
+    border: none;
+    align-self: stretch;
+  }
+  .c{
+    background-color: #c70000;
+    border-color: #c70000;
+    border-bottom: 2px solid #810101;
+    color: #f1f1f1;
+    font-weight: normal;
+  }
+  
