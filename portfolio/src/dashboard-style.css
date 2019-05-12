@@ -371,9 +371,9 @@ body {
     font-size: 2em;
     grid-area: todo;
     padding: 16px;
-    background: rgb(209, 128, 5); 
-    width: 400px;
-    height: 230px; 
+    background: url(./woodboard.pic.jpeg);
+    width: 430px;
+    height: 271px; 
     margin-right: 100px;  
     margin-top: 20px;
     
