@@ -271,6 +271,7 @@ body {
 
 
 .clock {
+    background: rgb(236, 142, 53);
     height: auto;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
@@ -284,7 +285,7 @@ body {
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     color: rgb(19, 18, 18);
-    background: silver;
+   
     width: 210px;
     height: 210px;
     margin-left: 130px;
@@ -343,22 +344,26 @@ body {
   
   .calculator {
     grid-area: calc;
-    background: white;
-    height: 600px;
+    background: rgb(73, 31, 224);
+    height: 700px;
     width: 375px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    padding: 10px;  
   }
-  
-  .answer {
+  .calculator >div {
+     padding: auto;
+
+  }
+  .result {
     order: -1;
     flex: 100%;
+    text-align: right;
   }
   
   .zero {
-    flex: 25%;
+    flex: 5%;
   }
 
 .todo-list {
@@ -366,7 +371,7 @@ body {
     font-size: 2em;
     grid-area: todo;
     padding: 16px;
-    background: rgb(166, 184, 7); 
+    background: rgb(209, 128, 5); 
     width: 400px;
     height: 230px; 
     margin-right: 100px;  
