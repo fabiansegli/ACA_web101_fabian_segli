@@ -344,12 +344,12 @@ body {
 .calculator {
     grid-area: calc;
     background: rgb(5, 0, 20);
-    height: 570px;
-    width: 375px;
+    height: 580px;
+    width: 378px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 20px;  
+    padding: 25px;  
 
   }
  
