@@ -1,8 +1,7 @@
 html {
     font-family: Avenir;
     background: url(./dashboard.pic.jpeg) no-repeat center fixed; 
-    background-size: cover;
-   
+    background-size: cover;  
 }
 body {
     margin: 0; 
@@ -372,7 +371,7 @@ body {
     grid-area: todo;
     padding: 16px;
     background: url(./woodboard.pic.jpeg);
-    width: 430px;
+    width: 431px;
     height: 271px; 
     margin-right: 100px;  
     margin-top: 20px;
