@@ -1,8 +1,7 @@
 html {
     font-family: Avenir;
     background: url(./dashboard.pic.jpeg) no-repeat center fixed; 
-    background-size: cover;
-   
+    background-size: cover;  
 }
 body {
     margin: 0; 
@@ -330,42 +329,46 @@ body {
   }
   * {
     margin-top: 10px;
-    font-family: Avenir;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .item {
-    background: rgb(23, 23, 24);
+    background: rgb(90, 85, 85);
     padding: 30px;
     margin: 5px;
-    color: rgb(237, 237, 245);
-    font-size: 40px;
+    color: rgb(15, 15, 15);
+    font-size: 22px;
+    font: bold;
     flex: 1;
   }
-  
-  .calculator {
+.calculator {
     grid-area: calc;
-    background: rgb(73, 31, 224);
-    height: 700px;
+    background: rgb(5, 0, 20);
+    height: 570px;
     width: 375px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px;  
-  }
-  .calculator >div {
-     padding: auto;
+    padding: 20px;  
 
   }
+ 
   .result {
     order: -1;
     flex: 100%;
     text-align: right;
+    background: silver;
+  }
+  .CE {
+      background: red;
+  }
+  .C {
+      background: red;
+  }
+  .equal {
+      background:blue;
   }
   
-  .zero {
-    flex: 5%;
-  }
-
 .todo-list {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -373,7 +376,7 @@ body {
     padding: 16px;
     background: url(./woodboard.pic.jpeg);
     width: 430px;
-    height: 271px; 
+    height: 270px; 
     margin-right: 100px;  
     margin-top: 20px;
     
