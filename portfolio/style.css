@@ -82,11 +82,12 @@ h2 {
   font-size: 10px;
   margin: 3% auto;
 }
-
+#portfolio-button {
+grid-column: 2/3;
+margin: 0 auto;
+}
 button {
-  grid-column: 2/3;
   margin: 4% auto;
-  width: 60%;
   height: 15%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
