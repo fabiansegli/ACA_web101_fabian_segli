@@ -270,29 +270,33 @@ body {
 
 
 .clock {
-    background: rgb(236, 142, 53);
+    background: url(./clock.pic.2.png) no-repeat;
+    background-size: 200px;
+    margin-top: 15%;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    width: 210px;
+    height: 204px;
+    margin-left: 130px;
+   
+  }
+  .hour {
+    width: 10px;
     height: auto;
+    margin-top: 65%;
+    margin-left: 34%;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
     grid-template-rows: auto;
     grid-template-areas:
           "first  second colon third fourth A M";
     max-width: auto;
-    margin-top: 10%;
-    font-size: 30px;
-    border-radius: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    color: rgb(19, 18, 18);
-   
-    width: 210px;
-    height: 210px;
-    margin-left: 130px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(13, 13, 14);
+    font-weight: bolder;
   }
-  
   .first {
       grid-area: first;
       margin: auto;
@@ -385,9 +389,8 @@ body {
      .container {
         display: grid;
         grid-template-areas:
-        "clock" "clock" 
+        "greet" "clock" 
         "calendar" 
-        "greet" "greet"
         "calc" "calc"
         "todo" "todo";
     }
