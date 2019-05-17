@@ -1,6 +1,6 @@
 html {
     font-family: Avenir;
-    background: url(./dashboard.pic.jpeg) no-repeat center fixed; 
+    background: url(../images/dashboard.pic.jpeg) no-repeat center fixed; 
     background-size: cover;  
 }
 body {
@@ -270,7 +270,7 @@ body {
 
 
 .clock {
-    background: url(./clock.pic.2.png) no-repeat;
+    background: url(../images/clock.pic.2.png) no-repeat;
     background-size: 200px;
     margin-top: 15%;
     border-radius: 100px;
@@ -378,7 +378,7 @@ body {
     font-size: 2em;
     grid-area: todo;
     padding: 16px;
-    background: url(./woodboard.pic.jpeg);
+    background: url(../images/woodboard.pic.jpeg);
     width: 430px;
     height: 270px; 
     margin-right: 100px;  
