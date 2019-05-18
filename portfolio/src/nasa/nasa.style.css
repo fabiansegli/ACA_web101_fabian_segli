@@ -1,10 +1,19 @@
 body {
     margin: auto;
-    background: url(https://images.pexels.com/photos/813269/pexels-photo-813269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    /*background: url(https://images.pexels.com/photos/813269/pexels-photo-813269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);*/
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    color: rgb(248, 242, 242);
+    color: rgb(236, 240, 243);
   }
+  /* bacground video */
+  #issvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
   header {
     text-align: center;
     font-size: 30px;
@@ -35,7 +44,7 @@ body {
   }
   
   .image:hover  {
-     opacity: 1;
+      opacity: 1;
       cursor: pointer;
    }
   
