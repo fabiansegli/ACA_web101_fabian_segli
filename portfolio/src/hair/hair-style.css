@@ -75,7 +75,9 @@ nav {
         height: 240px;
         margin: 10rem auto;
       }
-
+span {
+     margin-left: 50px; 
+}
   footer {
       width: 100%;
       height: 100%;
