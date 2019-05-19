@@ -1,5 +1,5 @@
 body {
-    background: url(./backgroundPic.jpg) no-repeat center fixed; 
+    background: url(../images/backgroundPic.jpg) no-repeat center fixed; 
     background-size: cover;
 }
   .logo {
@@ -96,7 +96,7 @@ body {
   }
   @media (max-width : 1060px){  
   body {
-  background-image: url(./backgroundPic.jpg);
+  background-image: url(../images/backgroundPic.jpg);
  }
  header {
    display: block;

@@ -1,0 +1,412 @@
+html {
+    font-family: Avenir;
+    background: url(../images/dashboard.pic.jpeg) no-repeat center fixed; 
+    background-size: cover;  
+}
+body {
+    margin: 0; 
+}
+.container {
+	display: grid;
+	grid-template-areas:
+		"calendar calendar clock"
+		"greet greet greet"
+        "calc calc todo"
+        "calc calc todo"
+        "calc calc todo";
+
+	max-width: 999px;
+	width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.calendar {
+	grid-area: calendar;
+	padding: 16px;
+    background-color: rgb(22, 16, 16);
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+            "monthyear  monthyear monthyear monthyear monthyear monthyear monthyear"
+            "sunday monday tuesday wednesday thursday friday saturday"
+        "one two three four five six seven"
+        "eight nine ten eleven twelve thirteen fourteen"
+        "fifteen sixteen seventeen eighteen nineteen twenty twentyone"
+        "twentytwo twentythree twentyfour twentyfive twentysix twentyseven twentyeight"
+        "twentynine thirty thirtyone thirtytwo thirtythree thirtyfour thirtyfive";
+    max-width: auto;
+    color: beige;
+  
+}
+.greetings {
+    grid-area: greet;
+    margin-left: auto;
+    margin-right: auto;
+}
+.calendar > div {
+    padding: 10px;
+}
+
+.monthyear {
+    grid-area: monthyear;
+    background: yellow;
+    color: black;
+    margin: auto;
+}
+
+.sunday {
+    grid-area: sunday;
+    margin: auto;
+}
+
+.monday {
+    grid-area: monday;
+    margin: auto;
+}
+
+.tuesday {
+    grid-area: tuesday;
+    margin: auto;
+}
+
+.wednesday {
+    grid-area: wednesday;
+    margin: auto;
+}
+
+.thursday {
+    grid-area: thursday;
+    margin: auto;
+}
+
+.friday {
+    grid-area: friday;
+    margin: auto;
+}
+
+.saturday {
+    grid-area: saturday;
+    margin: auto;
+}
+
+.box-one {
+    grid-area: one;
+    margin: auto;
+}
+
+.box-two {
+    grid-area: two;
+    margin: auto;
+}
+
+.box-three {
+    grid-area: three;
+    margin: auto;
+}
+
+.box-four {
+    grid-area: four;
+    margin: auto;
+}
+
+.box-five {
+    grid-area: five;
+    margin: auto;
+}
+
+.box-six {
+    grid-area: six;
+    margin: auto;
+}
+
+.box-seven {
+    grid-area: seven;
+    margin: auto;
+}
+
+.box-eight {
+    grid-area: eight;
+    margin: auto;
+}
+
+.box-nine {
+    grid-area: nine;
+    margin: auto;
+}
+
+.box-ten {
+    grid-area: ten;
+    margin: auto;
+}
+
+.box-eleven {
+    grid-area: eleven;
+    margin: auto;
+}
+
+.box-twelve {
+    grid-area: twelve;
+    margin: auto;
+}
+
+.box-thirteen {
+    grid-area: thirteen;
+    margin: auto;
+}
+
+.box-fourteen {
+    grid-area: fourteen;
+    margin: auto;
+}
+
+.box-fifteen {
+    grid-area: fifteen;
+    margin: auto;
+}
+
+.box-sixteen {
+    grid-area: sixteen;
+    margin: auto;
+}
+
+.box-seventeen {
+    grid-area: seventeen;
+    margin: auto;
+}
+
+.box-eighteen {
+    grid-area: eighteen;
+    margin: auto;
+}
+
+.box-nineteen {
+    grid-area: nineteen;
+    margin: auto;
+}
+
+.box-twenty {
+    grid-area: twenty;
+    margin: auto;
+}
+
+.box-twentyone {
+    grid-area: twentyone;
+    margin: auto;
+}
+
+.box-twentytwo {
+    grid-area: twentytwo;
+    margin: auto;
+}
+
+.box-twentythree {
+    grid-area: twentythree;
+    margin: auto;
+}
+
+.box-twentyfour {
+    grid-area: twentyfour;
+    margin: auto;
+}
+
+.box-twentyfive {
+    grid-area: twentyfive;
+    margin: auto;
+}
+
+.box-twentysix {
+    grid-area: twentysix;
+    margin: auto;
+}
+
+.box-twentyseven {
+    grid-area: twentyseven;
+    margin: auto;
+}
+
+.box-twentyeight {
+    grid-area: twentyeight;
+    margin: auto;
+}
+
+.box-twentynine {
+    grid-area: twentynine;
+    margin: auto;
+}
+
+.box-thirty {
+    grid-area: thirty;
+    margin: auto;
+}
+
+.box-thirtyone {
+    grid-area: thirtyone;
+    margin: auto;
+}
+
+.box-thirtytwo {
+    grid-area: thirtytwo;
+    margin: auto;
+}
+
+.box-thirtythree {
+    grid-area: thirtythree;
+    margin: auto;
+}
+
+.box-thirtyfour {
+    grid-area: thirtyfour;
+    margin: auto;
+}
+
+.box-thirtyfive {
+    grid-area: thirtyfive;
+    margin: auto;
+}
+
+
+.clock {
+    background: url(../images/clock.pic.2.png) no-repeat;
+    background-size: 200px;
+    margin-top: 15%;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    width: 210px;
+    height: 204px;
+    margin-left: 130px;
+   
+  }
+  .hour {
+    width: 10px;
+    height: auto;
+    margin-top: 65%;
+    margin-left: 34%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+          "first  second colon third fourth A M";
+    max-width: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(13, 13, 14);
+    font-weight: bolder;
+  }
+  .first {
+      grid-area: first;
+      margin: auto;
+  }
+  
+  .second {
+      grid-area: second;
+      margin: auto;
+  }
+  
+  .colon {
+      grid-area: colon;
+      margin: auto;
+  }
+  
+  .third {
+      grid-area: third;
+      margin: auto;
+  }
+  
+  .fourth {
+      grid-area: fourth;
+      margin: auto;
+  }
+  
+  .A {
+      grid-area: A;
+      margin: auto;
+  }
+  
+  .M {
+      grid-area: M;
+      margin: auto;
+  }
+  * {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .item {
+    background: rgb(90, 85, 85);
+    padding: 30px;
+    margin: 5px;
+    color: rgb(15, 15, 15);
+    font-size: 22px;
+    font: bold;
+    flex: 1;
+  }
+.calculator {
+    grid-area: calc;
+    background: rgb(5, 0, 20);
+    height: 580px;
+    width: 378px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;  
+
+  }
+ 
+  .result {
+    order: -1;
+    flex: 100%;
+    text-align: right;
+    background: silver;
+  }
+  .CE {
+      background: red;
+  }
+  .C {
+      background: red;
+  }
+  .equal {
+      background:blue;
+  }
+  
+.todo-list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    grid-area: todo;
+    padding: 16px;
+    background: url(../images/woodboard.pic.jpeg);
+    width: 430px;
+    height: 270px; 
+    margin-right: 100px;  
+    margin-top: 20px;
+    
+}
+ @media (max-width: 950px) {
+     .container {
+        display: grid;
+        grid-template-areas:
+        "greet" "clock" 
+        "calendar" 
+        "calc" "calc"
+        "todo" "todo";
+    }
+}
+.calendar >div {
+    padding:auto;  
+}
+ @media (max-width:576px) {
+     .container {
+         display: grid;
+         grid-template-areas: 
+         "greet"
+         "Clock"
+         "calendar"
+         "calc"
+         "todo";
+        
+     }
+ }
