@@ -1,44 +1,43 @@
-html {
-    font-family: Arial, Helvetica, sans-serif;
-    background: url(../images/barbershop.background.pic.jpg) no-repeat center fixed; 
-    background-size: cover;  
-}  
-
 body {
     margin: 0;  
+    font-family: Arial, Helvetica, sans-serif;
 }
-/* #myVideo {
+#myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-} */
+}
+.content {
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+.content * {
+    z-index: 1000;
+}
+.content img,a {
+    box-shadow: 0 0 10px black;
+}
 nav {
     background: transparent;
-    width: 80px;
-    height: 100px;
-    border: 1px solid black;
-    padding-top: 100px;
-      
-}
-.container {
-    height: auto;
+    height: 200px;   
     width: 100%;
-    display: grid;
-    grid-template-areas: "1 2 3 4";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
-#beard1 {
-    grid-area: "1";
+#nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-#beard2 {
-    grid-area: "2";
-}
-#beard3 {
-    grid-area: "3";
-}
-#beard4 {
-    grid-area: "4";
+#beard-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .logo {
     width: 150px;
@@ -54,73 +53,33 @@ nav {
     padding-top: 8px;
     margin-top: 15px;
     margin-right: 10px;
-    width: 8%;
+    min-width: 8rem;
     height: 5px;
     text-align: center;
     text-transform: uppercase;
    
   }
-  nav {
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-      padding-right: 2%;
-  }
+     
   main {
       height: auto;
   }
-  
- img {
+ 
+main img {
         width: 260px;
         height: 240px;
-        margin: 10rem auto;
+        margin: 5rem 2rem 0;
       }
-span {
-     margin-left: 50px; 
-}
+
   footer {
       width: 100%;
-      height: 100%;
-      margin-left: 10px;
-      margin-top: 500px;
       text-align: center;
       font-family: 'Times New Roman', Times, serif;
       font-size: 17px;
       color: rgb(231, 229, 240);
-      border: 1px solid black;
+      background: rgba(50, 50, 50, .7);
+      position: fixed;
+      bottom: 0;
+      
+     
      
   }
-  @media (max-width: 960px) {
-      .container {
-        grid-template-areas: 
-        "1 2"
-        "3 4"
-      }
-img {
-    margin-bottom: 0;
-   
-}
-.has-border {
-    padding: 3px;
-    height: 15px;
-    padding-top: 4px;
-    font-size: 15px;
-    margin-right: 15px;
-    margin-left: 5px;
-    width: 13%;
-}
-  }
-  @media (max-width: 576px) {
-      .container {
-          grid-template-areas: 
-          "1"
-          "2"
-          "3"
-          "4"
-      }
-      .has-border {
-          margin-right: 20px;
-          font-size: 12px;
-          padding: 3px;
-      }
-    }
