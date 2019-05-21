@@ -27,6 +27,9 @@ body {
     flex-direction: row;
     max-height: 800px;
   }
+  .container * {
+    z-index: 1000;
+  }
   
   .image {
     margin: auto;
