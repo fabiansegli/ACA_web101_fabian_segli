@@ -1,0 +1,76 @@
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif bold;
+}
+.squares {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 150px;
+   text-align: center;
+   text-justify: auto;
+}
+  .square { 
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+  }
+.white {
+    background: white;
+}
+.whitesmoke {
+    background:whitesmoke;
+}
+.blue {
+    background: blue;  
+}
+.lightskyblue {
+    background: lightskyblue;  
+}
+.yellow {
+    background: yellow;
+}
+.orange {
+    background: orange;  
+}
+.beige {
+    background:beige;
+}
+.burlywood {
+    background: burlywood;
+}
+.green {
+    background:green;  
+}
+.greenyellow {
+    background:greenyellow;
+}
+.violet{
+    background: violet;  
+}
+.wheat{
+    background: wheat;  
+}
+div:hover {
+	transition: ease-out 4s;
+	-webkit-transform: rotateX(-360deg); 
+  transform: rotateX(-360deg); 
+  background: white;
+}
+div:hover div:nth-child(odd) {
+	transform: scale(2) rotate(360deg) translate(90px);
+	transition-duration: 2s;
+    border: 2px solid rgb(208,120,41);
+    box-shadow: 0 0 7px black;
+    background: black;
+    color: white;
+}
+div:hover div:nth-child(even) {
+	transform: scale(0.5) rotate(-360deg) translate(-90px);
+	transition-duration: 2s;
+    border: 2px solid orange;
+    box-shadow: 0 0 12px black;
+    background: black;
+    color: white;
+}
