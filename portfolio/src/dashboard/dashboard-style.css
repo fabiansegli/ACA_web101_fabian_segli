@@ -440,28 +440,4 @@ span {
 }
 
 
- /* @media (max-width: 950px) {
-     .container {
-        display: grid;
-        grid-template-areas:
-        "greet" "clock" 
-        "calendar" 
-        "calc" "calc"
-        "todo" "todo";
-    }
-}
-.calendar >div {
-    padding:auto;  
-}
- @media (max-width:576px) {
-     .container {
-         display: grid;
-         grid-template-areas: 
-         "greet"
-         "Clock"
-         "calendar"
-         "calc"
-         "todo";
-        
-     }
- } */
+ 
