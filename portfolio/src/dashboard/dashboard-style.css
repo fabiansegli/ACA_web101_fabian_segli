@@ -7,19 +7,18 @@ body {
     margin: 0; 
 }
 .container {
-	display: grid;
-	grid-template-areas:
-		"calendar calendar clock"
-		"greet greet greet"
-        "calc calc todo"
-        "calc calc todo"
-        "calc calc todo";
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
 
 	max-width: 999px;
 	width: 100%;
 	margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
+}
+button {
+    box-shadow: 5px 5px 5px black;
 }
 
 .calendar {
@@ -40,12 +39,14 @@ body {
         "twentynine thirty thirtyone thirtytwo thirtythree thirtyfour thirtyfive";
     max-width: auto;
     color: beige;
+    box-shadow: 5px 5px 5px black;
   
 }
 .greetings {
-    grid-area: greet;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
 }
 .calendar > div {
     padding: 10px;
@@ -272,30 +273,23 @@ body {
 .clock {
     background: url(../images/clock.pic.2.png) no-repeat;
     background-size: 200px;
-    margin-top: 15%;
     border-radius: 100px;
     -moz-border-radius: 100px;
     -webkit-border-radius: 100px;
     width: 210px;
     height: 204px;
-    margin-left: 130px;
-   
+    box-shadow: 5px 5px 5px black;
   }
   .hour {
     width: 10px;
     height: auto;
     margin-top: 65%;
     margin-left: 34%;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-          "first  second colon third fourth A M";
-    max-width: auto;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     color: rgb(13, 13, 14);
     font-weight: bolder;
+   
   }
   .first {
       grid-area: first;
@@ -354,6 +348,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 25px;  
+    box-shadow: 5px 5px 5px black;
 
   }
  
@@ -372,20 +367,80 @@ body {
   .equal {
       background:blue;
   }
-  
-.todo-list {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    grid-area: todo;
-    padding: 16px;
-    background: url(../images/woodboard.pic.jpeg);
-    width: 430px;
-    height: 270px; 
-    margin-right: 100px;  
-    margin-top: 20px;
-    
+  /*Todo jquery*/
+  .todo {
+      background: whitesmoke;
+      padding: 1rem;
+      box-shadow: 5px 5px 5px black;
+  }
+  h3 {
+	font-size: 20px;
+	font-weight: 300;
 }
- @media (max-width: 950px) {
+
+.items {
+	list-style: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.items li {
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	padding: 10px 0;
+	display: flex;
+	font-size: 18px;
+}
+
+.items label {
+	flex: 1;
+	cursor: pointer;
+}
+
+.items input {
+	display: none;
+}
+
+.items input + label:before {
+	content: '⬜️';
+	margin-right: 5px;
+}
+
+.items input:checked + label:before {
+	content: '🚀';
+}
+
+.addItems {
+	margin-top: 20px;
+	max-width: 400px;
+}
+
+.addItems input {
+	width: 300px;
+	height: 40px;
+	font-size: 20px;
+	font-weight: 300;
+	color: rgb(7,39,39);
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: rgb(19, 226, 130);
+	border:1px solid rgba(0,0,0,0.1);
+}
+
+input::placeholder {
+	color: rgb(7,39,39);
+}
+
+input[type='submit'] {
+		box-shadow: 3px 4px rgb(13, 14, 14);
+}
+
+span {
+	cursor: pointer;
+}
+
+
+ /* @media (max-width: 950px) {
      .container {
         display: grid;
         grid-template-areas:
@@ -409,4 +464,4 @@ body {
          "todo";
         
      }
- }
+ } */
