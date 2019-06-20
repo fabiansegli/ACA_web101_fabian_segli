@@ -1,0 +1,21 @@
+body {
+    background: burlywood;
+    margin: 0;
+}
+.container {
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+#click-me {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+   
+}
+#click-me:active {
+box-shadow: 0 0 3px black;
+
+}
